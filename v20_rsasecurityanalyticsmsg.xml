@@ -5,7 +5,7 @@
 	 group="Analysis"
 	 type="7104">
 <VERSION
-	 xml="2.3.99.8"
+	 xml="2.3.99.10"
 	 device="2.0"/>
 <TAGVALMAP/>
 <HEADER
@@ -4255,6 +4255,11 @@
 	 id2="Lua"
 	 eventcategory="1603000000"
 	 content="[&lt;event_type&gt;] Throw in function void&lt;fld1&gt;LUA_ERRRUN: [string &quot;&lt;filename&gt;&quot;]:&lt;fld2&gt;:&lt;event_description&gt;"/>
+<MESSAGE
+	 id1="MANAGEMENT:01"
+	 id2="MANAGEMENT"
+	 eventcategory="1.701e+9"
+	 content="&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;sourceAddress&quot;:&quot;&lt;saddr&gt;:&lt;sport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;ec_theme&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;scope&quot;:&quot;&lt;context&gt;&quot;,&quot;text&quot;:&quot;&lt;fld22&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;}"/>
 <MESSAGE
 	 id1="MANAGEMENT"
 	 id2="MANAGEMENT"
