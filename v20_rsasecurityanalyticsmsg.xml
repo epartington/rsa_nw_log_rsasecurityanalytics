@@ -5,7 +5,7 @@
 	 group="Analysis"
 	 type="7104">
 <VERSION
-	 xml="2.3.99.13"
+	 xml="2.3.99.14"
 	 device="2.0"/>
 <TAGVALMAP/>
 <HEADER
@@ -4238,7 +4238,7 @@
 <MESSAGE
 	 id1="LogParse:21"
 	 id2="LogParse"
-	 content="[&lt;severity&gt;] &lt;category&gt;&lt;filename&gt;&lt;result&gt;"/>
+	 content="[&lt;severity&gt;]&lt;category&gt;&lt;filename&gt;&lt;result&gt;"/>
 <MESSAGE
 	 id1="LogdecoderProcessor"
 	 id2="LogdecoderProcessor"
@@ -4785,7 +4785,7 @@
 <MESSAGE
 	 id1="MessageBrokerLogReceiver:03"
 	 id2="MessageBrokerLogReceiver"
-	 content="[&lt;severity&gt;] warning &lt;fld1&gt; At least one queue exists that does not have any consumers.  This condition may arise because the Log Collector is not currently running or parts of the system have been shut down.  In some cases this condition may arise because a queue consumer (such as an event processor or VLC connection) was removed outside of the normal course of operation.  The queue names that have no consumers are are: &quot;&lt;LogDecoder.logdecoder.syslog&gt;&quot;.  Make sure that the Log Collector process is running and that all event processors are in the running state.  If this warning message persists and you are certain there are no legitimate consumers of these queues, you may delete them via the 'delete' property on the '/event-broker' node.  Supply the queue name to delete.  Note that any event data stored in a queue will be lost as the result of a delete operation."/>
+	 content="[&lt;severity&gt;] warning&lt;fld1&gt;At least one queue exists that does not have any consumers.  This condition may arise because the Log Collector is not currently running or parts of the system have been shut down.  In some cases this condition may arise because a queue consumer (such as an event processor or VLC connection) was removed outside of the normal course of operation.  The queue names that have no consumers are are: &quot;&lt;LogDecoder.logdecoder.syslog&gt;&quot;.  Make sure that the Log Collector process is running and that all event processors are in the running state.  If this warning message persists and you are certain there are no legitimate consumers of these queues, you may delete them via the 'delete' property on the '/event-broker' node.  Supply the queue name to delete.  Note that any event data stored in a queue will be lost as the result of a delete operation."/>
 <MESSAGE
 	 id1="MessageBrokerStats"
 	 id2="MessageBrokerStats"
@@ -6938,7 +6938,7 @@
 <MESSAGE
 	 id1="SDK-Values:15"
 	 id2="SDK-Values"
-	 content="[&lt;severity&gt;] User &lt;username&gt; (session &lt;fld1&gt;, &lt;saddr&gt;:&lt;sport&gt;) has issued values (channel &lt;fld2&gt;) (thread &lt;fld3&gt;): &lt;fld4&gt;"/>
+	 content="[&lt;severity&gt;] User&lt;username&gt;(session&lt;fld1&gt;,&lt;saddr&gt;:&lt;sport&gt;) has issued values (channel&lt;fld2&gt;) (thread&lt;fld3&gt;):&lt;fld4&gt;"/>
 <MESSAGE
 	 id1="SECURITY"
 	 id2="SECURITY"
@@ -8633,7 +8633,7 @@
 	 id2="meta"
 	 eventcategory="1701020000"
 	 functions="&lt;@EVENT_DESCRIPTION:Max File Size changed&gt;"
-	 content="[&lt;warning&gt;] Max File Size changed from 3 GB to 614.39 MB because of maxSize 6442450944 for /var/netwitness/logdecoder/metadb"/>
+	 content="[&lt;warning&gt;] Max File Size changed from&lt;fld1&gt;to&lt;fd2&gt;because of maxSize&lt;fld3&gt;for /var/netwitness/logdecoder/metadb"/>
 <MESSAGE
 	 id1="nwcompositestats.py:"
 	 id2="nwcompositestats.py:"
@@ -8649,7 +8649,7 @@
 <MESSAGE
 	 id1="nwlaunchstatreader.py:"
 	 id2="nwlaunchstatreader.py:"
-	 content="&lt;result&gt;! Failed setting up channel connection for [&lt;application&gt;.&lt;d23f0bad-624a-49a8-be69-0a92b1a81992&gt;.] Exception: []"/>
+	 content="&lt;result&gt;! Failed setting up channel connection for [&lt;application&gt;.&lt;fld1&gt;.] Exception: []"/>
 <MESSAGE
 	 id1="nwprocess.py:"
 	 id2="nwprocess.py:"
