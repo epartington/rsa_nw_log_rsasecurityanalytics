@@ -5,7 +5,7 @@
 	 group="Analysis"
 	 type="7104">
 <VERSION
-	 xml="2.3.99.10"
+	 xml="2.3.99.13"
 	 device="2.0"/>
 <TAGVALMAP/>
 <HEADER
@@ -51,31 +51,31 @@
 <HEADER
 	 id1="0014"
 	 id2="0014"
-	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;hhost&gt;collectd[&lt;hdata&gt;]: NgNativeReader_&lt;messageid&gt;-&lt;!payload&gt;"/>
+	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;device.host&gt;collectd[&lt;hdata&gt;]: NgNativeReader_&lt;messageid&gt;-&lt;!payload&gt;"/>
 <HEADER
 	 id1="0015"
 	 id2="0015"
-	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;hhost&gt;collectd[&lt;hdata&gt;]:&lt;messageid&gt;&lt;!payload&gt;"/>
+	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;device.host&gt;collectd[&lt;hdata&gt;]:&lt;messageid&gt;&lt;!payload&gt;"/>
 <HEADER
 	 id1="0016"
 	 id2="0016"
-	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;hhost&gt;&lt;messageid&gt;-&lt;hdata&gt;: imuxsock[pid&lt;hfld1&gt;]:&lt;!payload&gt;"/>
+	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;device.host&gt;&lt;messageid&gt;-&lt;hdata&gt;: imuxsock[pid&lt;hfld1&gt;]:&lt;!payload&gt;"/>
 <HEADER
 	 id1="0017"
 	 id2="0017"
-	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;hhost&gt;rsa_audit_onramp:&lt;messageid&gt;&lt;!payload&gt;"/>
+	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;device.host&gt;rsa_audit_onramp:&lt;messageid&gt;&lt;!payload&gt;"/>
 <HEADER
 	 id1="0018"
 	 id2="0018"
-	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;hhost&gt;puppet-agent[&lt;hdata&gt;]: (/&lt;messageid&gt;[&lt;!payload:messageid&gt;"/>
+	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;device.host&gt;puppet-agent[&lt;hdata&gt;]: (/&lt;messageid&gt;[&lt;!payload:messageid&gt;"/>
 <HEADER
 	 id1="0019"
 	 id2="0019"
-	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;hhost&gt;puppet-agent[&lt;hdata&gt;]: (&lt;messageid&gt;[&lt;!payload:messageid&gt;"/>
+	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;device.host&gt;puppet-agent[&lt;hdata&gt;]: (&lt;messageid&gt;[&lt;!payload:messageid&gt;"/>
 <HEADER
 	 id1="0020"
 	 id2="0020"
-	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;hhost&gt;puppet-agent[&lt;hdata&gt;]:&lt;messageid&gt;&lt;!payload:messageid&gt;"/>
+	 content="&lt;hmonth&gt;&lt;hdate&gt;&lt;htime&gt;&lt;device.host&gt;puppet-agent[&lt;hdata&gt;]:&lt;messageid&gt;&lt;!payload:messageid&gt;"/>
 <HEADER
 	 id1="0021"
 	 id2="0021"
@@ -100,6 +100,10 @@
 	 id1="0027"
 	 id2="0027"
 	 content="&lt;hmonth&gt;&lt;hday&gt;&lt;htime&gt;&lt;device.host&gt;Nw&lt;hfld1&gt;[&lt;hfld2&gt;]: {{&quot;deviceVendor&quot;:&quot;&lt;hvendor&gt;&quot;,&quot;deviceProduct&quot;:&quot;&lt;hproduct&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;service.name&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;hversion&gt;&quot;,&quot;identity&quot;:&quot;&lt;husername&gt;&quot;,&quot;sourceAddress&quot;:&quot;&lt;hsaddr&gt;:&lt;hsport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;messageid&gt;&quot;&lt;!payload:hversion&gt;"/>
+<HEADER
+	 id1="0028"
+	 id2="0028"
+	 content="&lt;hmonth&gt;&lt;hday&gt;&lt;htime&gt;&lt;device.host&gt;&lt;hfld1&gt;{{&quot;category&quot;:&quot;&lt;messageid&gt;&quot;,&quot;"/>
 <MESSAGE
 	 id1="(Scope(Class[Base]))"
 	 id2="(Scope(Class[Base]))"
@@ -243,6 +247,10 @@
 	 id2="AUTHENTICATION"
 	 eventcategory="1401070000"
 	 content="&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;sourceAddress&quot;:&quot;&lt;saddr&gt;:&lt;sport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;ec_theme&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;}"/>
+<MESSAGE
+	 id1="AUTHENTICATION:12"
+	 id2="AUTHENTICATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
 <MESSAGE
 	 id1="AddedDevice"
 	 id2="Added Device"
@@ -704,6 +712,10 @@
 	 id2="Aggregation"
 	 functions="&lt;@event_description:Starting aggregation as new member of aggregation gang&gt;"
 	 content="[&lt;event_type&gt;] Starting aggregation from device '&lt;daddr&gt;:&lt;dport&gt;' at session&lt;fld1&gt;because this is a new member of an aggregation gang"/>
+<MESSAGE
+	 id1="Aggregation:72"
+	 id2="Aggregation"
+	 content="[&lt;result&gt;] Failed to download device '&lt;daddr&gt;:&lt;dport&gt;' because Cannot start aggregation, process is shutting down. Device aggregation is being stopped."/>
 <MESSAGE
 	 id1="Alerting"
 	 id2="Alerting"
@@ -1219,6 +1231,38 @@
 	 eventcategory="1701010000"
 	 functions="&lt;@event_description:Created queue persistence directory&gt;"
 	 content="[&lt;event_type&gt;] Created queue persistence directory:&lt;directory&gt;"/>
+<MESSAGE
+	 id1="CONFIGURATION"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;fld3&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;scope&quot;:&quot;&lt;context&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;text&quot;:&quot;&lt;event_description&gt;&quot;}"/>
+<MESSAGE
+	 id1="CONFIGURATION:01"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;fld2&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;&quot;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;,&quot;value&quot;:&quot;&lt;fld3&gt;&quot;}"/>
+<MESSAGE
+	 id1="CONFIGURATION:02"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;fld2&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severityt&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;,&quot;value&quot;:&quot;&lt;fld3&gt;&quot;}"/>
+<MESSAGE
+	 id1="CONFIGURATION:03"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userAgent&quot;:&quot;&lt;ericpartingtonlive&gt;&quot;}"/>
+<MESSAGE
+	 id1="CONFIGURATION:04"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;filename&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
+	 id1="CONFIGURATION:05"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;filename&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;}"/>
+<MESSAGE
+	 id1="CONFIGURATION:06"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;filename&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;scope&quot;:&quot;&lt;context&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
+	 id1="CONFIGURATION:07"
+	 id2="CONFIGURATION"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;filename&gt;&quot;,&quot;operation&quot;:&quot;&lt;chartPreferences&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;,&quot;value&quot;:&quot;&lt;fld3&gt;..."/>
 <MESSAGE
 	 id1="Caching"
 	 id2="Caching"
@@ -1837,6 +1881,46 @@
 	 id2="DATA_ACCESS"
 	 content="&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;sourceAddress&quot;:&quot;&lt;saddr&gt;:&lt;sport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;ec_theme&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;}"/>
 <MESSAGE
+	 id1="DATA_ACCESS:02"
+	 id2="DATA_ACCESS"
+	 content="&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;sourceAddress&quot;:&quot;&lt;saddr&gt;:&lt;sport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;ec_theme&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;text&quot;:&quot;&lt;fld2&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;}"/>
+<MESSAGE
+	 id1="DATA_ACCESS:03"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;,&quot;value&quot;:&quot;&lt;fld3&gt;&quot;}"/>
+<MESSAGE
+	 id1="DATA_ACCESS:04"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;scope&quot;:&quot;&lt;context&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
+	 id1="DATA_ACCESS:05"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;..."/>
+<MESSAGE
+	 id1="DATA_ACCESS:06"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
+	 id1="DATA_ACCESS:07"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;,&quot;value&quot;:&quot;&lt;fld3&gt;..."/>
+<MESSAGE
+	 id1="DATA_ACCESS:08"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld3&gt;userAgent=&lt;client&gt;, queryString=&lt;fld4&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;} client"/>
+<MESSAGE
+	 id1="DATA_ACCESS:09"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;, userAgent=&lt;client&gt;, queryString=&lt;fld3&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;}"/>
+<MESSAGE
+	 id1="DATA_ACCESS:10"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
+	 id1="DATA_ACCESS:11"
+	 id2="DATA_ACCESS"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;filename&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
 	 id1="Data"
 	 id2="Data"
 	 eventcategory="1605020000"
@@ -2417,6 +2501,12 @@
 	 eventcategory="1600000000"
 	 functions="&lt;@event_description:Persisted stats&gt;"
 	 content="Persisted&lt;fld1&gt;of&lt;fld2&gt;stats in /var/lib/netwitness/collectd/&lt;obj_name&gt;"/>
+<MESSAGE
+	 id1="ESMAggregator::10"
+	 id2="ESMAggregator:"
+	 eventcategory="1600000000"
+	 functions="&lt;@event_description:Persisted stats&gt;"
+	 content="Persisted&lt;fld1&gt;of&lt;fld2&gt;stats in /var/netwitness/collectd/&lt;obj_name&gt;"/>
 <MESSAGE
 	 id1="ESMAggregator::03"
 	 id2="ESMAggregator:"
@@ -4146,6 +4236,10 @@
 	 functions="&lt;@event_description:Add variable ignored, format mismatch&gt;"
 	 content="[&lt;event_type&gt;] Add variable&lt;obj_name&gt;ignored: format&lt;obj_value&gt;. Exist one with format&lt;obj_type&gt;"/>
 <MESSAGE
+	 id1="LogParse:21"
+	 id2="LogParse"
+	 content="[&lt;severity&gt;] &lt;category&gt;&lt;filename&gt;&lt;result&gt;"/>
+<MESSAGE
 	 id1="LogdecoderProcessor"
 	 id2="LogdecoderProcessor"
 	 eventcategory="1600000000"
@@ -4256,6 +4350,10 @@
 	 eventcategory="1603000000"
 	 content="[&lt;event_type&gt;] Throw in function void&lt;fld1&gt;LUA_ERRRUN: [string &quot;&lt;filename&gt;&quot;]:&lt;fld2&gt;:&lt;event_description&gt;"/>
 <MESSAGE
+	 id1="Lua:09"
+	 id2="Lua"
+	 content="[&lt;severity&gt;] LUA_ERRRUN: file '&lt;filename&gt;' not found"/>
+<MESSAGE
 	 id1="MANAGEMENT:01"
 	 id2="MANAGEMENT"
 	 eventcategory="1.701e+9"
@@ -4265,6 +4363,18 @@
 	 id2="MANAGEMENT"
 	 eventcategory="1.701e+9"
 	 content="&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;sourceAddress&quot;:&quot;&lt;saddr&gt;:&lt;sport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;ec_theme&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;scope&quot;:&quot;&lt;context&gt;&quot;}"/>
+<MESSAGE
+	 id1="MANAGEMENT:02"
+	 id2="MANAGEMENT"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;}"/>
+<MESSAGE
+	 id1="MANAGEMENT:03"
+	 id2="MANAGEMENT"
+	 content="&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;sourceAddress&quot;:&quot;1&lt;saddr&gt;:&lt;sport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;category&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;parameters&quot;:&quot;file=&lt;directory&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;};"/>
+<MESSAGE
+	 id1="MANAGEMENT:04"
+	 id2="MANAGEMENT"
+	 content="&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;sourceAddress&quot;:&quot;&lt;saddr&gt;:&lt;sport&gt;&quot;,&quot;sessionId&quot;:&lt;fld1&gt;,&quot;category&quot;:&quot;&lt;category&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;}"/>
 <MESSAGE
 	 id1="MemPages"
 	 id2="MemPages"
@@ -4666,6 +4776,16 @@
 	 eventcategory="1605020000"
 	 functions="&lt;@event_description:MessageBrokerLogReceiver connection&gt;"
 	 content="[&lt;event_type&gt;] info"/>
+<MESSAGE
+	 id1="MessageBrokerLogReceiver:02"
+	 id2="MessageBrokerLogReceiver"
+	 eventcategory="1605020000"
+	 functions="&lt;@event_description:MessageBrokerLogReceiver connection&gt;"
+	 content="[&lt;event_type&gt;] error&lt;fld1&gt;"/>
+<MESSAGE
+	 id1="MessageBrokerLogReceiver:03"
+	 id2="MessageBrokerLogReceiver"
+	 content="[&lt;severity&gt;] warning &lt;fld1&gt; At least one queue exists that does not have any consumers.  This condition may arise because the Log Collector is not currently running or parts of the system have been shut down.  In some cases this condition may arise because a queue consumer (such as an event processor or VLC connection) was removed outside of the normal course of operation.  The queue names that have no consumers are are: &quot;&lt;LogDecoder.logdecoder.syslog&gt;&quot;.  Make sure that the Log Collector process is running and that all event processors are in the running state.  If this warning message persists and you are certain there are no legitimate consumers of these queues, you may delete them via the 'delete' property on the '/event-broker' node.  Supply the queue name to delete.  Note that any event data stored in a queue will be lost as the result of a delete operation."/>
 <MESSAGE
 	 id1="MessageBrokerStats"
 	 id2="MessageBrokerStats"
@@ -6428,6 +6548,12 @@
 	 functions="&lt;@event_description:User has requested an SDK alias key&gt;"
 	 content="[&lt;event_type&gt;] User&lt;event_user&gt;(session&lt;fld1&gt;,&lt;saddr&gt;:&lt;sport&gt;) has requested the SDK aliases: key=&lt;fld2&gt;"/>
 <MESSAGE
+	 id1="SDK-Info:04"
+	 id2="SDK-Info"
+	 eventcategory="1605000000"
+	 functions="&lt;@event_description:User has requested an SDK alias key&gt;"
+	 content="[&lt;event_type&gt;] User&lt;event_user&gt;(session&lt;fld1&gt;,&lt;saddr&gt;:&lt;sport&gt;) has requested the SDK key references"/>
+<MESSAGE
 	 id1="SDK-Language"
 	 id2="SDK-Language"
 	 eventcategory="1603000000"
@@ -6810,6 +6936,10 @@
 	 functions="&lt;@event_description:User has finished values&gt;&lt;@duration:*DUR($MSG,'%Z',query_time)&gt;"
 	 content="[&lt;event_type&gt;] User&lt;event_user&gt;(session&lt;fld1&gt;,&lt;saddr&gt;:&lt;sport&gt;) has finished values (channel&lt;fld2&gt;, queued&lt;queue_time&gt;,{execute&lt;query_time&gt;,&lt;fld4&gt;|execute&lt;query_time&gt;}):&lt;fld3&gt;fieldName=&lt;nwdb_fieldname&gt;where=&quot;&lt;fld4&gt;...(truncating&lt;fld5&gt;bytes from log)"/>
 <MESSAGE
+	 id1="SDK-Values:15"
+	 id2="SDK-Values"
+	 content="[&lt;severity&gt;] User &lt;username&gt; (session &lt;fld1&gt;, &lt;saddr&gt;:&lt;sport&gt;) has issued values (channel &lt;fld2&gt;) (thread &lt;fld3&gt;): &lt;fld4&gt;"/>
+<MESSAGE
 	 id1="SECURITY"
 	 id2="SECURITY"
 	 eventcategory="1701020000"
@@ -6892,6 +7022,18 @@
 	 eventcategory="1603000000"
 	 functions="&lt;@event_description:Unidentified data received on syslog receiver&gt;"
 	 content="[&lt;event_type&gt;] Unidentified&lt;fld1&gt;from&lt;saddr&gt;received on syslog receiver: '&lt;fld2&gt;"/>
+<MESSAGE
+	 id1="SYSTEM"
+	 id2="SYSTEM"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;parameters&quot;:&quot;&lt;fld2&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;text&quot;:&quot;&lt;fld3&gt;&quot;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
+	 id1="SYSTEM:01"
+	 id2="SYSTEM"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;produt&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;fld2&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;&quot;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
+<MESSAGE
+	 id1="SYSTEM:02"
+	 id2="SYSTEM"
+	 content="&quot;,&quot;deviceProduct&quot;:&quot;&lt;product&gt;&quot;,&quot;deviceService&quot;:&quot;&lt;application&gt;&quot;,&quot;deviceVendor&quot;:&quot;&lt;fld1&gt;&quot;,&quot;deviceVersion&quot;:&quot;&lt;version&gt;&quot;,&quot;identity&quot;:&quot;&lt;username&gt;&quot;,&quot;key&quot;:&quot;&lt;fld2&gt;&quot;,&quot;operation&quot;:&quot;&lt;action&gt;&quot;,&quot;outcome&quot;:&quot;&lt;result&gt;&quot;,&quot;severity&quot;:&lt;severity&gt;,&quot;userRole&quot;:&quot;&lt;user_role&gt;&quot;}"/>
 <MESSAGE
 	 id1="Scheduler"
 	 id2="Scheduler"
@@ -8504,6 +8646,10 @@
 	 eventcategory="1610000000"
 	 functions="&lt;@event_type:info&gt;&lt;@event_description:Loaded module&gt;&lt;@ec_activity:start&gt;&lt;@ec_outcome:Success&gt;&lt;@ec_subject:Service&gt;"
 	 content="Loaded Composite Stats module&lt;obj_name&gt;"/>
+<MESSAGE
+	 id1="nwlaunchstatreader.py:"
+	 id2="nwlaunchstatreader.py:"
+	 content="&lt;result&gt;! Failed setting up channel connection for [&lt;application&gt;.&lt;d23f0bad-624a-49a8-be69-0a92b1a81992&gt;.] Exception: []"/>
 <MESSAGE
 	 id1="nwprocess.py:"
 	 id2="nwprocess.py:"
